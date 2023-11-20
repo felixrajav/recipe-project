@@ -14,7 +14,9 @@ app.use(cors());
 app.use("/auth", userRouter);
 app.use("/recipes", recipesRouter);
 
-
+app.get('/', (req, res) => {
+  res.send("This is a book recipe app")
+})
 
 
 
